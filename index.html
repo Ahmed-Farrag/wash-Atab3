@@ -293,9 +293,37 @@
         <div class="col-lg-8 col-md-12">
 <div class="text-content-1 text-center">
 <h1>تدور مسلسل او فيلم تتابعة؟</h1>
-<p class="text-methoud">خلينا نساعدك</p>
-<button type="button" class="btn btn-danger">مسلسل</button>
-<button type="button" class="btn btn-outline-danger">فـيـلـم</button>
+
+<div class="container">
+
+  <div id="smartwizard">
+      <ul class="cart_list-steps text-center">
+          <li><a href="#step-1">    </a></li>
+          <li><a href="#step-2">    </a></li>
+          <li><a href="#step-3">    </a></li>
+      </ul>
+      <div>
+          <div id="step-1" class="">
+              <!-- Cart Item -->
+              <button type="button" class="btn btn-danger">مسلسل</button>
+<button type="button" class="btn btn-outline-danger"> safrفـيـلـم</button>
+          </div>
+          <div id="step-2" class="">
+            <button type="button" class="btn btn-danger">قديم</button>
+            <button type="button" class="btn btn-outline-danger"> frفـيـلـم</button>
+          </div>
+
+          <div id="step-3" class="">
+            <button type="button" class="btn btn-danger">مسلسل</button>
+            <button type="button" class="btn btn-outline-danger"> safrفـيـلـم</button>
+          </div>
+
+      </div>
+  </div>
+
+</div>
+
+
 </div>
 
 
@@ -314,26 +342,26 @@
       <img src="img/2.png"  width="435px" height="195px" alt="">
     </div>
     <div class="grid-item">
-      <img src="img/3.png"  alt="">
+      <img src="img/Captain America - Active copy 3.png"  width="210px" height="195px" alt="">
     </div>
     <div class="grid-item">
-      <img src="img/3.png"  alt="">
+      <img src="img/3.png"  width="210px" height="195px" alt="">
     </div>
     <div class="grid-item">
-      <img src="img/3.png"  alt="">
+      <img src="img/Captain America - Active copy 3.png"  width="210px" height="195px"  alt="">
     </div>
     <div class="grid-item">
-      <img src="img/3.png"  alt="">
+      <img src="img/3.png"  width="210px" height="195px"  alt="">
     </div>
-    <div class="grid-item" >
-      <img src="img/1.png" width="435px" height="195px" alt="">
+  <div class="grid-item">
+    <img src="img/3.png"   width="210px" height="195px" alt="">
   </div>
   <div class="grid-item">
-    <img src="img/3.png"  alt="">
+    <img src="img/3.png"   width="210px" height="195px" alt="">
   </div>
-  <div class="grid-item">
-    <img src="img/3.png"  alt="">
-  </div>
+  <div class="grid-item" >
+    <img src="img/1.png" width="435px" height="195px" alt="">
+</div>
   </div>
 </div>
   
@@ -586,6 +614,44 @@
 
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 
+  <script src="vendor/jquery.smartWizard.min.js"></script>
+
+  
+
+
+<script>
+    $(document).ready(function() {
+        $('#smartwizard').smartWizard({
+
+            selected: 2,
+            keyNavigation: true,
+            autoAdjustHeight: true,
+            lang: {
+                next: 'next',
+                previous: 'prev'
+            },
+            
+
+            toolbarSettings: {
+                toolbarPosition: 'bottom',
+                toolbarButtonPosition: 'center',
+                showNextButton: true,
+                showPreviousButton: true,
+
+            },
+            anchorSettings: {
+                anchorClickable: true, // Enable/Disable anchor navigation
+                enableAllAnchors: false, // Activates all anchors clickable all times
+                markDoneStep: true, // add done css
+                enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+            },
+            enableAnchorOnDoneStep: true,
+
+        });
+
+    });
+
+</script>
   
   <script src="js/js.js"></script>
 </body>

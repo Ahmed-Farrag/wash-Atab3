@@ -103,11 +103,12 @@ $('.grid').masonry({
     // options
     itemSelector: '.grid-item',
     columnWidth: 100,
-    gutter: 10,
+    gutter: 13,
     originLeft: false,
+
   });
 
 
-
+  
 
 
